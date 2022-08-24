@@ -1,0 +1,19 @@
+<div class="container">
+  <span class="container__date">
+    <mat-form-field>
+      <mat-label>Select a date</mat-label>
+      <input matInput type="date">
+    </mat-form-field>
+  </span>
+  <span>
+    <form class="formSearch">
+      <mat-form-field class="formSearch__input">
+        <mat-label>Search by Container ID</mat-label>
+        <input matInput type="search" placeholder="#container" [formControl]="containerID"/>
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </form>
+  </span>
+</div>
+
+

@@ -1,0 +1,25 @@
+.container {
+  padding: 4rem 1rem;
+}
+
+.container__logo-emodal {
+  width: 50%;
+}
+
+mat-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
+  max-width: 300px;
+  margin: 3rem auto;
+  text-align: center;
+  height: 300px;
+}
+
+button {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.container__password-input, .container__username-input {
+  width: 80%;
+  margin: 1rem auto;
+}

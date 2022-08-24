@@ -1,0 +1,26 @@
+<div class="container">
+  <form class="container__login" [formGroup]="formLogin" (ngSubmit)="logIn()">
+    <mat-card class="card">
+      <div class="container__logo">
+        <img class="container__logo-emodal" src="../../../assets/image/advent logo.svg" alt="">
+      </div>
+      <div>
+        <mat-form-field class="container__username-input">
+          <mat-label>User</mat-label>
+          <input mat-input type="text" formControlName="username" matInput placeholder="Enter your username">
+          <mat-error *ngIf="getUsername?.hasError('required')">It is <strong>required</strong></mat-error>
+        </mat-form-field>
+      </div>
+      <div class="container__password">
+        <mat-form-field class="container__password-input">
+          <mat-label>Password</mat-label>
+          <input mat-input type="password" formControlName="password" matInput placeholder="Enter your password">
+          <mat-error *ngIf="getLastName?.hasError('required')">It is <strong>required</strong></mat-error>
+        </mat-form-field>
+      </div>
+      <div class="container__login-btn">
+        <button mat-raised-button color="primary" [disabled]="formLogin.invalid">Log In</button>
+      </div>
+    </mat-card>
+  </form>
+</div>

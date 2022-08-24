@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h1>Trucking company</h1>
+      <mat-form-field class="opt" appearance="fill">
+        <mat-label>Company name</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let company of companies"
+            [value]="company.value">{{ company.viewValue }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col">
+      <h1>Terminal</h1>
+      <mat-form-field appearance="fill">
+        <mat-label>Terminal</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let terminal of terminals" [value]="terminal.value">
+            {{ terminal.viewValue }} </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.container__btn {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: centers;
+  gap: 40px;
+}

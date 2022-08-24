@@ -1,0 +1,24 @@
+.container {
+  margin-left: 8em;
+}
+
+h3 {
+  color: #2056c4;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+p {
+    display: flexbox;
+}
+
+.paymentLogo {
+  margin-top: 1.5em;
+  height: 3.5em;
+  width: 20em;
+  display: block;
+}
+
+mat-card{
+  width: 90%;
+}
